@@ -1,0 +1,135 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+:root {
+    --destaque: #22D4FD;
+    --links: white;
+    --transicao: #57778a;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    padding: 2% 0% 0% 15%;
+}
+
+.navegador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link_nav {
+    font-size: 21px;
+    color: var(--destaque);
+    font-weight: 500;
+    font-family: 'Montserrat',sans-serif;
+
+    margin: 0 10px;
+    padding: 10px 15px;
+    text-decoration: none;
+}
+
+.link_nav:hover {
+    border-radius: 13px;
+    color: var(--links);
+}
+
+body {
+   /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: black;
+    color: var(--links);
+}
+
+.container {
+    padding: 8% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.destaque {
+    color: var(--destaque);
+}
+
+.titulo {
+    margin: 15px;
+    font-size: 34px;
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.descricao {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.botao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.links {
+    color: var(--links);
+    width: 378px;
+    border: 2px solid var(--destaque);
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+
+    text-align: center;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+
+    border-radius: 10px;
+    font-size: 24px;
+    padding: 18px 0px;
+    margin: 25px;
+}
+
+a:hover {
+    background-color: var(--transicao);
+    transition: 0.4s;
+}
+
+
+footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+
+    background-color: var(--destaque);
+    color:black;
+    padding: 24px;
+}
