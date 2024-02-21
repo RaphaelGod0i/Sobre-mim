@@ -16,7 +16,7 @@
 }
 
 header {
-    padding: 2% 0% 0% 15%;
+    padding: 1% 0% 0% 0%;
 }
 
 .navegador {
@@ -26,7 +26,7 @@ header {
 }
 
 .link_nav {
-    font-size: 21px;
+    font-size: 1.4rem;
     color: var(--destaque);
     font-weight: 500;
     font-family: 'Montserrat',sans-serif;
@@ -49,14 +49,15 @@ body {
 }
 
 .container {
-    padding: 8% 15%;
+    padding: 5% 15%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 82px;
 }
 
 .conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -67,8 +68,8 @@ body {
 }
 
 .titulo {
-    margin: 15px;
-    font-size: 34px;
+    margin: 1rem;
+    font-size: 2.25rem;
     font-family: "Krona One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -81,11 +82,15 @@ body {
 }
 
 .descricao {
-    font-size: 20px;
+    font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.imagem_banner {
+    width: 50%;
 }
 
 .botao {
@@ -98,7 +103,7 @@ body {
 
 .links {
     color: var(--links);
-    width: 378px;
+    width: 50%;
     border: 2px solid var(--destaque);
 
     display: flex;
@@ -112,7 +117,7 @@ body {
     font-weight: 600;
 
     border-radius: 10px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 18px 0px;
     margin: 25px;
 }
@@ -125,11 +130,27 @@ a:hover {
 
 footer {
     font-family: 'Montserrat', sans-serif;
-    font-size: 21px;
+    font-size: 1.3rem;
     font-weight: 500;
     text-align: center;
 
     background-color: var(--destaque);
     color:black;
     padding: 24px;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .navegador {
+    justify-content: center;
+    padding: 8%;
+    }
+
+    .conteudo {
+        width: auto;
+    }
 }
